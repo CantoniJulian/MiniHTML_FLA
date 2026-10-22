@@ -26,9 +26,7 @@ class stack
 
 stack :: stack()
 {
-
-	top->dt = 'z';
-	top->next = NULL;
+	top = NULL;
 
 	// top->next = nullptr;
 	bot = top;
@@ -79,8 +77,10 @@ bool stack :: isEmpty()
 {
 	if(top == NULL)
 	{
+	std::  cout << "No durarías ni un día en el vacío.\n";
 	return true;
 	}
+	std :: cout << "Más falso que billete de 2 pesos\n" << top->dt;
 	return false;
 }
 

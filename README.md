@@ -16,7 +16,14 @@ $$S \rightarrow S\Sigma_t \mid \langle\Sigma_i\rangle S \langle/\Sigma_i\rangle 
 $$\text{where}\quad \Sigma_i \in \{b, p, i\} \quad \text{and} \quad \Sigma_t \in \{a, \dots, z\}$$
 
 
+# TODO:
+
+
+* _read_line()_
+
+
 > ** WIP **
+
 
 
 
