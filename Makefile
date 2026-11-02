@@ -1,6 +1,6 @@
 # Configuración del compilador y flags
 CXX = g++
-CXXFLAGS = -Wall -std=c++17 -O2
+CXXFLAGS = -Wall -std=c++17 -O2 -fpermissive
 
 # Nombres y rutas
 SRC = src/stack.h
@@ -17,6 +17,6 @@ $(TARGET): $(SRC)
 
 # Limpia el ejecutable y la carpeta de compilación
 clean:
-	rm -rf $(BUILD_DIR)
+	rm bin/automatest
 
 .PHONY: all clean
