@@ -1,6 +1,9 @@
 #include <iostream>
 #include "stack.h"
- 
+#include <fstream>
+#include <string>
+#include <cstdlib>
+
 stack s;
 
 int q0(char* alpha), q1(char* alfa), q2(char* alfa), q3(char *alfa), qfin(char *alfa);
@@ -123,7 +126,18 @@ return 0;
 
 int main()
 {
-	
-	q0("<b>a<c</b>");
+	std :: string myText;
+	std::ifstream MyReadFile("in.html");
+
+
+	getline (MyReadFile, myText);
+
+	MyReadFile.close(); 
+	std :: cout << "Lectura terminada\n	"<< myText << std ::endl;
+
+	char * input = &myText[0];
+	q0(input);
 	std :: cout << "Finalizo el programa." << std :: endl;
+	
 }
+
