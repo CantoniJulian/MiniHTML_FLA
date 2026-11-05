@@ -77,10 +77,10 @@ bool stack :: isEmpty()
 {
 	if(top == NULL)
 	{
-	std::  cout << "No durarías ni un día en el vacío.\n";
+	// std::  cout << "No durarías ni un día en el vacío.\n";
 	return true;
 	}
-	std :: cout << "Más falso que billete de 2 pesos\n" << top->dt;
+	// std :: cout << "Más falso que billete de 2 pesos\n" << top->dt;
 	return false;
 }
 
